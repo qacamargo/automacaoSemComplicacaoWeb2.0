@@ -22,14 +22,11 @@ public class testeWeb {
 
     @Test
     public void  primeiroTeste(){
-        aula_07_xpath
-        String xpathTitulo = "//section[2]//h4";      
+        String xpathTitulo = "//section[2]//h4";
         WebElement txtTitulo = driver.findElement(By.xpath(xpathTitulo));
         String titulo = txtTitulo.getText();
         assertEquals("Porque Tempo É Conhecimento.",titulo);
             }
-
-
 
     @After
     public void finalizaTeste(){
