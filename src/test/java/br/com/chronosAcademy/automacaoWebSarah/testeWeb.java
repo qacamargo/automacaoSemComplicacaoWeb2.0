@@ -25,7 +25,7 @@ public class testeWeb {
 
     @Test
     public void primeiroTeste() {
-        String xpathTitulo = "/html/body/div/div/div/section[2]/div[3]/div/div/div[1]/div/h4";
+        String xpathTitulo = "//section[2]//h4";
         WebElement txtTitulo = driver.findElement(By.xpath(xpathTitulo));
         String titulo = txtTitulo.getText();
         assertEquals("Porque Tempo É Conhecimento.", titulo);
@@ -33,7 +33,7 @@ public class testeWeb {
 
     @Test
     public void segundoTeste() {
-        String xpathTitulo = "/html/body/div/div/div/section[9]/div[3]/div/div/div/div/h4";
+        String xpathTitulo = "//section[9]//h4";
         WebElement txtTitulo = driver.findElement(By.xpath(xpathTitulo));
         String titulo = txtTitulo.getText();
         assertEquals("Os Nossos Resultados São Espelho De Nossas Atitudes.", titulo);
